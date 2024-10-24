@@ -92,6 +92,13 @@ ConsumptionSinceStart:
            A trip is considered to end when engine is no longer enabled.
            The signal may however keep the value of the last trip until a new trip is started.
 
+ConsumptionSinceLastRefuel:
+  datatype: float
+  type: sensor
+  unit: l
+  description: Fuel amount in liters consumed since last refuel of the current trip.
+  comment: This value indicates the fuel consumption from refueling until the next refuel.
+
 IsEngineStopStartEnabled:
   datatype: boolean
   type: sensor
