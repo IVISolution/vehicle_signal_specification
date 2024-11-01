@@ -123,3 +123,27 @@ IsFuelPortFlapOpen:
   datatype: boolean
   type: actuator
   description: Status of the fuel port flap(s). True if at least one is open.
+
+InstantaneousFuelEconomy:
+  datatype: float
+  type: actuator
+  unit: km/l
+  description: Current real-time fuel consumption rate. Refreshed frequently during vehicle operation.
+
+AverageFuelEconomy:
+  datatype: float
+  type: actuator
+  unit: km/l
+  description: Overall lifetime average fuel economy since vehicle production or last reset of historical data.
+
+TripFuelEconomy:
+  datatype: float
+  type: actuator
+  unit: km/l
+  description: Average fuel economy for current driving cycle, calculated from trip start to current time.
+
+AfterRefuelingFuelEconomy:
+  datatype: float
+  type: actuator
+  unit: km/l
+  description: Average fuel economy calculated from the last refueling event to current time.
