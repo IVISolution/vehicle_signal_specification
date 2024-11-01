@@ -123,3 +123,37 @@ IsFuelPortFlapOpen:
   datatype: boolean
   type: actuator
   description: Status of the fuel port flap(s). True if at least one is open.
+
+InstantaneousFuelEconomy:
+  datatype: float
+  type: actuator
+  unit: km/l
+  description: Real-time fuel consumption rate. Refreshed frequently during vehicle operation.
+
+CumulativeFuelEconomy:
+  datatype: float
+  type: sensor
+  unit: km/l
+  description: Cumulative average fuel economy calculated from vehicle start or last user reset.
+  comment: This represents the accumulated fuel economy over the entire period since the last reset.
+           Unlike trip-based measurements, this provides a long-term average of fuel efficiency.
+
+DriveFuelEconomy:
+  datatype: float
+  type: sensor
+  unit: km/l
+  description: Average fuel economy for the current drive cycle, calculated from engine start to current time.
+  comment: This represents the fuel efficiency during the active driving session.
+           The value is reset when IGN OFF occurs or when the user manually initiates a drive fuel economy reset.
+           After reset, it is recalculated from zero when the engine restarts or the new drive cycle begins.
+           It provides real-time average fuel economy for the ongoing drive cycle.
+
+AfterRefuelingFuelEconomy:
+  datatype: float
+  type: sensor
+  unit: km/l
+  description: Average fuel economy calculated from the most recent refueling event to the current time.
+  comment: This value represents the fuel efficiency for the period between consecutive refueling events.
+           It is automatically reset to zero when refueling is detected and begins accumulating from that point.
+           The calculation continues until the next refueling occurs.
+           This metric is useful for tracking fuel efficiency improvements or changes between fill-ups.
