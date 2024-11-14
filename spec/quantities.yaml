@@ -5,6 +5,8 @@ length:
   definition: Linear extent in space between any two points (ISO 80000-3:2019)
   remark: Length does not need to be measured along a straight line.
           Length is one of the seven base quantities in the International System of Units (ISO 80000-1).
+area:
+  definition: Extent of a two-dimensional region (ISO 80000-1:2009)
 velocity:
   definition: Vector quantity giving the rate of change of a position vector (ISO 80000-3:2019)
 acceleration:
@@ -24,6 +26,8 @@ work:
   definition: Process quantity describing the total action of a force F along a continuous curve
               in three-dimensional space with infinitesimal displacement dr,
               as a line integral of their scalar product (ISO 80000-4:2019)
+energy:
+  definition: Capacity to do work (ISO 80000-4:2019)
 mass:
   definition: Property of a body which expresses itself in terms of inertia
               related to changes in its state of motion as well as
