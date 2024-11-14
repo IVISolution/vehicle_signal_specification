@@ -29,6 +29,19 @@ inch:
   quantity: length
   allowed-datatypes: ['numeric']
 
+# Area
+
+cm^2:
+  definition: Area measured in square centimeters
+  unit: square centimeter
+  quantity: area
+  allowed-datatypes: ['numeric']
+m^2:
+  definition: Area measured in square meters
+  unit: square meter
+  quantity: area
+  allowed-datatypes: ['numeric']
+
 # Velocity
 
 km/h:
@@ -127,6 +140,13 @@ kWh:
   definition: Energy consumption measured in kilowatt hours
   unit: kilowatt hours
   quantity: work
+  allowed-datatypes: ['numeric']
+
+# Energy
+J:
+  definition: Energy consumption measured in joules
+  unit: joule
+  quantity: energy
   allowed-datatypes: ['numeric']
 
 # Mass
