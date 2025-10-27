@@ -5,30 +5,30 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.129.0">
     <meta name="generator" content="Relearn 6.0.0">
-    <meta name="description" content="Specification format The Vehicle Signal Specification domain specification consist of vspec files. vspec files are YAML files following the rule set defined for VSS. They also support the use of include directives to refer to other vspec files, much like #include in C/C&#43;&#43;. . Please note that, from a YAML perspective, the include directive is just another comment.
-The file VehicleSignalSpecification.vspec serves as root and includes other vspec files from the VSS repository.">
+    <meta name="description" content="This profile can be used to specify how VSS signals can be extended to include cybersecurity attibutes.
+Mapping Syntax The syntax for definition of a signal with cybersecurty attributes (in an overlay) is specified below.
+&lt;VSS Signal name&gt;: type: &lt;VSS type&gt; datatype: &lt;VSS datatype&gt; cybersecurity: [authentication: {true|false}] [encryption: {true|false}] [integrity_check: {true|false}] [impact_profiles: {[{motion|privacy|regulation|safety|operational}]}] Set authentication attribute to true if you need to ensure serialized data is being exchanged between trusted entities or prevent unauthorized access to serialized data during transmission.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Basic Rules :: Vehicle Signal Specification">
-    <meta name="twitter:description" content="Specification format The Vehicle Signal Specification domain specification consist of vspec files. vspec files are YAML files following the rule set defined for VSS. They also support the use of include directives to refer to other vspec files, much like #include in C/C&#43;&#43;. . Please note that, from a YAML perspective, the include directive is just another comment.
-The file VehicleSignalSpecification.vspec serves as root and includes other vspec files from the VSS repository.">
-    <meta property="og:url" content="https://covesa.github.io/vehicle_signal_specification/rule_set/basics/index.html">
+    <meta name="twitter:title" content="Cybersecurity Profile :: Vehicle Signal Specification">
+    <meta name="twitter:description" content="This profile can be used to specify how VSS signals can be extended to include cybersecurity attibutes.
+Mapping Syntax The syntax for definition of a signal with cybersecurty attributes (in an overlay) is specified below.
+&lt;VSS Signal name&gt;: type: &lt;VSS type&gt; datatype: &lt;VSS datatype&gt; cybersecurity: [authentication: {true|false}] [encryption: {true|false}] [integrity_check: {true|false}] [impact_profiles: {[{motion|privacy|regulation|safety|operational}]}] Set authentication attribute to true if you need to ensure serialized data is being exchanged between trusted entities or prevent unauthorized access to serialized data during transmission.">
+    <meta property="og:url" content="https://covesa.github.io/vehicle_signal_specification/extensions/cybersecurity_profile/index.html">
     <meta property="og:site_name" content="Vehicle Signal Specification">
-    <meta property="og:title" content="Basic Rules :: Vehicle Signal Specification">
-    <meta property="og:description" content="Specification format The Vehicle Signal Specification domain specification consist of vspec files. vspec files are YAML files following the rule set defined for VSS. They also support the use of include directives to refer to other vspec files, much like #include in C/C&#43;&#43;. . Please note that, from a YAML perspective, the include directive is just another comment.
-The file VehicleSignalSpecification.vspec serves as root and includes other vspec files from the VSS repository.">
+    <meta property="og:title" content="Cybersecurity Profile :: Vehicle Signal Specification">
+    <meta property="og:description" content="This profile can be used to specify how VSS signals can be extended to include cybersecurity attibutes.
+Mapping Syntax The syntax for definition of a signal with cybersecurty attributes (in an overlay) is specified below.
+&lt;VSS Signal name&gt;: type: &lt;VSS type&gt; datatype: &lt;VSS datatype&gt; cybersecurity: [authentication: {true|false}] [encryption: {true|false}] [integrity_check: {true|false}] [impact_profiles: {[{motion|privacy|regulation|safety|operational}]}] Set authentication attribute to true if you need to ensure serialized data is being exchanged between trusted entities or prevent unauthorized access to serialized data during transmission.">
     <meta property="og:locale" content="en-us">
     <meta property="og:type" content="article">
-    <meta property="article:section" content="Rule Set">
-    <meta property="article:published_time" content="2019-08-04T13:05:11+02:00">
-    <meta property="article:modified_time" content="2019-08-04T13:05:11+02:00">
-    <meta itemprop="name" content="Basic Rules :: Vehicle Signal Specification">
-    <meta itemprop="description" content="Specification format The Vehicle Signal Specification domain specification consist of vspec files. vspec files are YAML files following the rule set defined for VSS. They also support the use of include directives to refer to other vspec files, much like #include in C/C&#43;&#43;. . Please note that, from a YAML perspective, the include directive is just another comment.
-The file VehicleSignalSpecification.vspec serves as root and includes other vspec files from the VSS repository.">
-    <meta itemprop="datePublished" content="2019-08-04T13:05:11+02:00">
-    <meta itemprop="dateModified" content="2019-08-04T13:05:11+02:00">
-    <meta itemprop="wordCount" content="842">
-    <title>Basic Rules :: Vehicle Signal Specification</title><link rel="shortcut icon" href="/vehicle_signal_specification/images/fav.png" type="image/x-icon" />
+    <meta property="article:section" content="Extending and Customizing VSS">
+    <meta itemprop="name" content="Cybersecurity Profile :: Vehicle Signal Specification">
+    <meta itemprop="description" content="This profile can be used to specify how VSS signals can be extended to include cybersecurity attibutes.
+Mapping Syntax The syntax for definition of a signal with cybersecurty attributes (in an overlay) is specified below.
+&lt;VSS Signal name&gt;: type: &lt;VSS type&gt; datatype: &lt;VSS datatype&gt; cybersecurity: [authentication: {true|false}] [encryption: {true|false}] [integrity_check: {true|false}] [impact_profiles: {[{motion|privacy|regulation|safety|operational}]}] Set authentication attribute to true if you need to ensure serialized data is being exchanged between trusted entities or prevent unauthorized access to serialized data during transmission.">
+    <meta itemprop="wordCount" content="247">
+    <title>Cybersecurity Profile :: Vehicle Signal Specification</title><link rel="shortcut icon" href="/vehicle_signal_specification/images/fav.png" type="image/x-icon" />
 
     <link href="/vehicle_signal_specification/css/fontawesome-all.min.css?1761565552" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/vehicle_signal_specification/css/fontawesome-all.min.css?1761565552" rel="stylesheet"></noscript>
     <link href="/vehicle_signal_specification/css/nucleus.css?1761565552" rel="stylesheet">
@@ -60,7 +60,7 @@ The file VehicleSignalSpecification.vspec serves as root and includes other vspe
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/vehicle_signal_specification/rule_set/basics/index.html">
+  <body class="mobile-support html disableInlineCopyToClipboard" data-url="/vehicle_signal_specification/extensions/cybersecurity_profile/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -73,18 +73,9 @@ The file VehicleSignalSpecification.vspec serves as root and includes other vspe
               <div class="topbar-content">
                 <div class="topbar-content-wrapper"><nav class="TableOfContents">
   <ul>
-    <li><a href="#specification-format">Specification format</a></li>
-    <li><a href="#addressing-nodes">Addressing Nodes</a></li>
-    <li><a href="#parent-nodes">Parent Nodes</a></li>
-    <li><a href="#deprecation-since-version-21">Deprecation <code>since version 2.1</code></a>
+    <li><a href="#mapping-syntax">Mapping Syntax</a>
       <ul>
         <li><a href="#example">Example</a></li>
-      </ul>
-    </li>
-    <li><a href="#style-guide">Style Guide</a>
-      <ul>
-        <li><a href="#naming-conventions">Naming Conventions</a></li>
-        <li><a href="#line-length">Line Length</a></li>
       </ul>
     </li>
   </ul>
@@ -95,16 +86,16 @@ The file VehicleSignalSpecification.vspec serves as root and includes other vspe
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/vehicle_signal_specification/index.html"><span itemprop="name">Vehicle Signal Specification</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/vehicle_signal_specification/rule_set/index.html"><span itemprop="name">Rule Set</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Basic Rules</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/vehicle_signal_specification/extensions/index.html"><span itemprop="name">Extending and Customizing VSS</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Cybersecurity Profile</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
 				
-            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/covesa/vehicle_signal_specification/edit/master/docs-gen/content/rule_set/basics.md" target="_blank" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
+            <div class="topbar-button topbar-button-edit" data-content-empty="disable" data-width-s="area-more" data-width-m="show" data-width-l="show"><a class="topbar-control" href="https://github.com/covesa/vehicle_signal_specification/edit/master/docs-gen/content/extensions/cybersecurity_profile.md" target="_blank" title="Edit (CTRL&#43;ALT&#43;w)"><i class="fa-fw fas fa-pen"></i></a>
             </div>
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/vehicle_signal_specification/rule_set/index.html" title="Rule Set (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/vehicle_signal_specification/extensions/overlay/index.html" title="VSS Overlay Mechanism (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/vehicle_signal_specification/rule_set/branches/index.html" title="Branch Entry (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/vehicle_signal_specification/extensions/network_serialization_profile/index.html" title="Network Serialization Profile (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -124,96 +115,41 @@ The file VehicleSignalSpecification.vspec serves as root and includes other vspe
             <header class="headline">
             </header>
 
-<h1 id="basic-rules">Basic Rules</h1>
+<h1 id="cybersecurity-profile">Cybersecurity Profile</h1>
 
-<h2 id="specification-format">Specification format</h2>
-<p>The Vehicle Signal Specification domain specification consist of <em>vspec</em> files.
-<em>vspec</em> files are YAML files following the rule set defined for VSS.
-They also support the use of include directives to refer to other <em>vspec</em> files, much like <code>#include</code> in C/C++. .
-Please note that, from a YAML perspective, the include directive is just another comment.</p>
-<p>The file <a href="https://github.com/COVESA/vehicle_signal_specification/blob/master/spec/VehicleSignalSpecification.vspec" rel="external" target="_blank">VehicleSignalSpecification.vspec</a> serves as root
-and includes other <em>vspec</em> files from the <a href="https://github.com/COVESA/vehicle_signal_specification" rel="external" target="_blank">VSS repository</a>.</p>
-<p>The raw specification files can, with help of tools in the <a href="https://github.com/COVESA/vss-tools" rel="external" target="_blank">vss-tools repository</a>,
-be converted to other formats that are more user friendly to read.
-Converted representations are also included as release artifacts for each <a href="https://github.com/COVESA/vehicle_signal_specification/releases" rel="external" target="_blank">VSS release</a>.</p>
-<p>VSS is in itself case sensitive.
-This means that keywords, signal names, types and values normally shall be given with the case specified.
-It is however recommended not to take advantage of this and reuse the same name with different case,
-as some implementations may treat VSS identifiers as case insensitive.</p>
-<h2 id="addressing-nodes">Addressing Nodes</h2>
-<p>VSS supports only a single tree, that means that all signals must belong to the same root.
-In the VSS standard catalog the root branch is called <code>Vehicle</code>, so all signals
-must be part of the <code>Vehicle</code> tree.</p>
-<p>Tree nodes are addressed, left-to-right, from the root of the tree
-toward the node itself. Each element in the name is delimited with
-a period (&quot;.&quot;). The element hops from the root to the leaf is called <code>path</code></p>
-<p>For example, the dimming status of the rearview mirror in the cabin is addressed:</p>
-<pre><code>Vehicle.Cabin.RearviewMirror.Dimmed
-</code></pre>
-<p>If there are an array of elements, such as door rows 1-3, they will be
-addressed with an index branch:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>Vehicle.Cabin.Door.Row1.Left.IsLocked
-Vehicle.Cabin.Door.Row1.Left.Window.Position
-
-Vehicle.Cabin.Door.Row2.Left.IsLocked
-Vehicle.Cabin.Door.Row2.Left.Window.Position
-
-Vehicle.Cabin.Door.Row3.Left.IsLocked
-Vehicle.Cabin.Door.Row3.Left.Window.Position</code></pre></div><p>In a similar fashion, seats are located by row and their left-to-right position.</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>Vehicle.Cabin.Seat.Row1.Pos1.IsBelted  # Left front seat
-Vehicle.Cabin.Seat.Row1.Pos2.IsBelted  # Right front seat
-
-Vehicle.Cabin.Seat.Row2.Pos1.IsBelted  # Left rear seat
-Vehicle.Cabin.Seat.Row2.Pos2.IsBelted  # Middle rear seat
-Vehicle.Cabin.Seat.Row2.Pos3.IsBelted  # Right rear seat</code></pre></div><p>The exact use of <code>PosX</code> elements and how they correlate to actual
-positions in the car, is dependent on the actual vehicle using the
-spec.</p>
-<h2 id="parent-nodes">Parent Nodes</h2>
-<p>If a new leaf node is defined, all parent branches included in its name must
-be included as well, as shown below:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>[Signal] Vehicle.Cabin.Door.Row1.Left.IsLocked
-[Branch] Vehicle.Cabin.Door.Row1.Left
-[Branch] Vehicle.Cabin.Door.Row1
-[Branch] Vehicle.Cabin.Door
-[Branch] Vehicle.Cabin
-[Branch] Vehicle</code></pre></div><p>The branches do not have to be defined in any specific order as long
-as each branch component is defined somewhere in the vspec file (or an
-included vspec file).</p>
-<h2 id="deprecation-since-version-21">Deprecation <code>since version 2.1</code></h2>
-<p>During the process of model development, nodes might be
-moved or deleted. Giving developers a chance to adopt to the
-changes, the original nodes are marked as deprecated with the following rules.</p>
+<p>This profile can be used to specify how VSS signals can be extended to include cybersecurity attibutes.</p>
+<h2 id="mapping-syntax">Mapping Syntax</h2>
+<p>The syntax for definition of a signal with cybersecurty attributes (in an overlay) is specified below.</p>
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">&lt;VSS Signal name&gt;</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: <span style="color:#ae81ff">&lt;VSS type&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">datatype</span>: <span style="color:#ae81ff">&lt;VSS datatype&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">cybersecurity</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[authentication</span>: {<span style="color:#66d9ef">true</span><span style="color:#ae81ff">|false}]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[encryption</span>: {<span style="color:#66d9ef">true</span><span style="color:#ae81ff">|false}]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[integrity_check</span>: {<span style="color:#66d9ef">true</span><span style="color:#ae81ff">|false}]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">[impact_profiles</span>: {[{<span style="color:#ae81ff">motion|privacy|regulation|safety|operational}]}]</span></span></span></code></pre></div><ul>
+<li>Set <code>authentication</code> attribute to true if you need to ensure serialized data is being exchanged between trusted entities or prevent unauthorized access to serialized data during transmission. Sample implementation mechanisms are public-key infrastructure, token based authentication etc.</li>
+<li>Set <code>encryption</code> attribute to true to protect the confidentiality of serialized data or to ensure that even if serialized data is intercepted, it cannot be easily understood or misused. Sample implementation mechanisms are symmetric (e.g AES), asymetric (e.g RSA) or end-to-end encryption.</li>
+<li>Set <code>integrity_check</code> attribute to detect and prevent unauthorized alterations to serialized data or to maintain the accuracy and reliability of data as it is transmitted or stored. Sample implementation mechanisms are checksums, counters, hash based, message authentication codes etc</li>
+<li><code>impact_profiles</code> attribute indicate set of impact profiles that assess potential consequences of security issues. Possible values include:
 <ul>
-<li>Nodes, which are moved in the tree or are intended to be removed from the specification are marked with the deprecation keyword.</li>
-<li>The string following the deprecation keyword shall start with the version, when the node was deprecated starting with <code>V</code> (e.g. <code>V2.1</code>) followed by the reason for deprecation.</li>
-<li>If the node was moved, it shall be indicated by <code>moved to</code> followed by the new node name in dot notation as deprecation reason. This keyword shall be used only
-if the meta-data of the moved node hasn&rsquo;t changed.</li>
-<li>If the node is intended to be removed from the specification or the meta data changed, it shall be indicated by <code>removed</code> and optionally the reason for the removal as deprecation reason.</li>
-<li>Nodes which are deprecated will be removed from the specification, either in the second minor update or, if earlier, the next major update.</li>
+<li><code>motion</code>: Impact on vehicle movement or control systems.</li>
+<li><code>privacy</code>: Impact on the privacy of individuals and data protection.</li>
+<li><code>regulation</code>: Impact related to regulatory compliance and legal issues.</li>
+<li><code>safety</code>: Impact on personal safety and potential physical harm.</li>
+<li><code>operational</code>: Impact on system functionality and service availability.</li>
+</ul>
+</li>
 </ul>
 <h3 id="example">Example</h3>
-<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">Vehicle.Navigation.CurrentLocation</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: <span style="color:#ae81ff">branch</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">description</span>: <span style="color:#ae81ff">The current latitude and longitude of the vehicle.</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">deprecation</span>: <span style="color:#ae81ff">V2.1 moved to Vehicle.CurrentLocation</span></span></span></code></pre></div><p>It is recommended for servers, which are implementing protocols for the vehicle signal specification, to serve old and new nodes during the deprecation period described above.</p>
-<h2 id="style-guide">Style Guide</h2>
-<p>The VSS specification must adhere to YAML syntax. To keep the standardized VSS specification in this repository consistent the following style guide is provided.</p>
-<h3 id="naming-conventions">Naming Conventions</h3>
-<p>Node names in VSS must follow the restrictions specified in <a href="https://yaml.org/spec/1.2.2/#chapter-5-character-productions" rel="external" target="_blank">Yaml</a> i.e. must only use the printable subset of the Unicode character set.</p>
-<p>Tools and Generators supporting VSS may however put additional restrictions on which characters that are allowed. For maximum portability, node names in the VSS standard catalog must fulfill the following rules</p>
-<ul>
-<li>Node names in the VSS standard catalog shall use camel case notation starting with a capital letter.</li>
-<li>Node names in the VSS standard catalog shall use only <code>A-Z</code>, <code>a-z</code> and <code>0-9</code> in node names.</li>
-<li>Boolean signals must start with <code>Is</code>.</li>
-<li>Node names are case insensitive for comparison operations,
-therefore the full path of node names must be unique e.g.
-<code>Vehicle.Abc</code> and <code>Vehicle.ABC</code> are the same in comparison and therefore the presence of both is prohibited.</li>
-</ul>
-<p>Examples:</p>
-<div class="highlight wrap-code"><pre tabindex="0"><code>Vehicle.Cabin.Door.Row1.Left.IsLocked</code></pre></div><p>Naming convention for string literals can be found in the <a href="/vehicle_signal_specification/rule_set/data_entry/allowed/">chapter</a>for specifying allowed values.</p>
-<h3 id="line-length">Line Length</h3>
-<p>It is recommended that line length for files in this repository ( e.g. <code>*.vspec</code> and <code>*.md</code> files) shall not exceed 120 characters. This is not a strict limit, it is e.g. not recommended to split long URLs over multiple lines.</p>
-
+<div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">Vehicle.Body.Mirrors.DriverSide.Tilt</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">datatype</span>: <span style="color:#ae81ff">int8</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">type</span>: <span style="color:#ae81ff">actuator</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">cybersecurity</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">authentication</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">encryption</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">integrity</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">impact_profiles</span>: [<span style="color:#ae81ff">operational]</span></span></span></code></pre></div>
             <footer class="footline">
             </footer>
           </article>
@@ -258,8 +194,8 @@ therefore the full path of node names must be unique e.g.
           <li data-nav-id="/vehicle_signal_specification/introduction/overview/index.html" class=""><a class="padding" href="/vehicle_signal_specification/introduction/overview/index.html">Overview</a></li>
           <li data-nav-id="/vehicle_signal_specification/introduction/taxonomy/index.html" class=""><a class="padding" href="/vehicle_signal_specification/introduction/taxonomy/index.html">Taxonomies</a></li></ul></li>
           <li data-nav-id="/vehicle_signal_specification/governance/index.html" class=""><a class="padding" href="/vehicle_signal_specification/governance/index.html">Governance</a></li>
-          <li data-nav-id="/vehicle_signal_specification/rule_set/index.html" class="parent "><a class="padding" href="/vehicle_signal_specification/rule_set/index.html">Rule Set</a><ul id="R-subsections-816430a737ffa7bef5da453d8c2d55d4" class="morespace collapsible-menu">
-          <li data-nav-id="/vehicle_signal_specification/rule_set/basics/index.html" class="active"><a class="padding" href="/vehicle_signal_specification/rule_set/basics/index.html">Basic Rules</a></li>
+          <li data-nav-id="/vehicle_signal_specification/rule_set/index.html" class=""><a class="padding" href="/vehicle_signal_specification/rule_set/index.html">Rule Set</a><ul id="R-subsections-816430a737ffa7bef5da453d8c2d55d4" class="morespace collapsible-menu">
+          <li data-nav-id="/vehicle_signal_specification/rule_set/basics/index.html" class=""><a class="padding" href="/vehicle_signal_specification/rule_set/basics/index.html">Basic Rules</a></li>
           <li data-nav-id="/vehicle_signal_specification/rule_set/branches/index.html" class=""><a class="padding" href="/vehicle_signal_specification/rule_set/branches/index.html">Branch Entry</a></li>
           <li data-nav-id="/vehicle_signal_specification/rule_set/data_entry/index.html" class="alwaysopen"><a class="padding" href="/vehicle_signal_specification/rule_set/data_entry/index.html">Data Entry</a><ul id="R-subsections-ba77ba218fcc0133bc138c588fbb6eb9" class="morespace collapsible-menu">
           <li data-nav-id="/vehicle_signal_specification/rule_set/data_entry/data_types/index.html" class=""><a class="padding" href="/vehicle_signal_specification/rule_set/data_entry/data_types/index.html">Datatypes</a></li>
@@ -272,9 +208,9 @@ therefore the full path of node names must be unique e.g.
           <li data-nav-id="/vehicle_signal_specification/rule_set/includes/index.html" class=""><a class="padding" href="/vehicle_signal_specification/rule_set/includes/index.html">Includes</a></li></ul></li>
           <li data-nav-id="/vehicle_signal_specification/catalog/index.html" class=""><a class="padding" href="/vehicle_signal_specification/catalog/index.html">VSS Catalog</a><ul id="R-subsections-665f6cae1c56b0dcfe0d69bfe3f4be93" class="morespace collapsible-menu">
           <li data-nav-id="/vehicle_signal_specification/catalog/vehicle_motion_management/index.html" class=""><a class="padding" href="/vehicle_signal_specification/catalog/vehicle_motion_management/index.html">Vehicle Motion Management</a></li></ul></li>
-          <li data-nav-id="/vehicle_signal_specification/extensions/index.html" class=""><a class="padding" href="/vehicle_signal_specification/extensions/index.html">Extending and Customizing VSS</a><ul id="R-subsections-6bd9c98d69baa9a2d1581189a2aaf28a" class="morespace collapsible-menu">
+          <li data-nav-id="/vehicle_signal_specification/extensions/index.html" class="parent "><a class="padding" href="/vehicle_signal_specification/extensions/index.html">Extending and Customizing VSS</a><ul id="R-subsections-6bd9c98d69baa9a2d1581189a2aaf28a" class="morespace collapsible-menu">
           <li data-nav-id="/vehicle_signal_specification/extensions/overlay/index.html" class=""><a class="padding" href="/vehicle_signal_specification/extensions/overlay/index.html">VSS Overlay Mechanism</a></li>
-          <li data-nav-id="/vehicle_signal_specification/extensions/cybersecurity_profile/index.html" class=""><a class="padding" href="/vehicle_signal_specification/extensions/cybersecurity_profile/index.html">Cybersecurity Profile</a></li>
+          <li data-nav-id="/vehicle_signal_specification/extensions/cybersecurity_profile/index.html" class="active"><a class="padding" href="/vehicle_signal_specification/extensions/cybersecurity_profile/index.html">Cybersecurity Profile</a></li>
           <li data-nav-id="/vehicle_signal_specification/extensions/network_serialization_profile/index.html" class=""><a class="padding" href="/vehicle_signal_specification/extensions/network_serialization_profile/index.html">Network Serialization Profile</a></li></ul></li>
           <li data-nav-id="/vehicle_signal_specification/license/index.html" class=""><a class="padding" href="/vehicle_signal_specification/license/index.html">License</a></li>
           <li data-nav-id="/vehicle_signal_specification/ecosystem/index.html" class=""><a class="padding" href="/vehicle_signal_specification/ecosystem/index.html">Ecosystem</a><ul id="R-subsections-30d29cf6aaa7fb1e0e056430337d3cd8" class="morespace collapsible-menu">
@@ -302,7 +238,7 @@ therefore the full path of node names must be unique e.g.
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/vehicle_signal_specification/rule_set/basics/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/vehicle_signal_specification/extensions/cybersecurity_profile/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>
